@@ -58,15 +58,18 @@ void hapusdata(int x)
 
 int main()
 {
-    int pilih;
+    int pilih,c;
     int datake=1;
+
+    cin
     do
     {
         ;cout<<"MENU UTAMA" << endl;
         cout<<"1. Tambah Data"<< endl;;
         cout<<"2. Hapus Data Terakhir"<<endl;
         cout<<"3. Tampil Data"<<endl;
-        cout<<"4. Hapus data"<<endl;
+        cout<<"4. kosongkan data"<<endl;
+
         cout<<"9. Keluar"<<endl;
 
         cout<<"Pilihan Anda [1-9] : ";
