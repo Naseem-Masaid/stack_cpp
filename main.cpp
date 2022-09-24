@@ -16,19 +16,29 @@ struct paket kirim[100];
 /*******************************************/
 
 
-void tambahdata(int x)
+void tambahdata(int x,int y)
 {
+    if(x<=y){
     cout<<"Inputkan Jenis Barang    :";
     cin>>kirim[x].jenis_brg;
     cout<<"Inputkan Berat           :";
     cin>>kirim[x].berat;
     cout<<"Inputkan Kota Tujuan     :";
     cin>>kirim[x].kota;
+    }else
+    cout << "data telah penuh" << endl;
+    
+        
+    cout<<"Press Any Key...";
+    getch();
 }
 
 void tampildata(int x)
 {
     cout<<"Daftar Kiriman Paket"<<endl;
+    if(x==0){
+        cout << "Data kosong" << endl;
+    }else if(x>0){
     for(int a=1; a<x; a++)
     {
 
@@ -36,6 +46,7 @@ void tampildata(int x)
         cout<<kirim[a].jenis_brg<<" ";
         cout<<kirim[a].berat<<" ";
         cout<<kirim[a].kota<<endl;
+    }
     }
 
     cout<<"Press Any Key...";
@@ -60,8 +71,9 @@ int main()
 {
     int pilih,c;
     int datake=1;
-
-    cin
+    int z=0;
+    cout << "masukan jumlah data = ";
+    cin >> z;
     do
     {
         ;cout<<"MENU UTAMA" << endl;
@@ -76,7 +88,7 @@ int main()
         cin>>pilih;
         if(pilih==1)
             { /*Menambah data baru diletakan di DATAKE*/
-                tambahdata(datake);
+                tambahdata(datake,z);
                 datake++;
             }
         if(pilih==2)
