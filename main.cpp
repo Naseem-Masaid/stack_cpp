@@ -37,7 +37,7 @@ void tambahdata(int x,int y)
 void tampildata(int x)
 {
     cout<<"Daftar Kiriman Paket"<<endl;
-    if(x==0){
+    if(x==1){
         cout << "Data kosong" << endl;
     }else if(x>0){
     for(int a=1; a<x; a++)
@@ -104,7 +104,7 @@ int main()
         if(pilih==4)
             { /*Menghapus Data Terakhir (DATAKE-1*/
                 cout << "Data berhsail di hapus " << endl;
-                datake=datake-datake;
+                datake= 1 +(datake-datake);
             }
 
     }
