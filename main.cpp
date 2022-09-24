@@ -27,8 +27,9 @@ void tambahdata(int x,int y)
     cin>>kirim[x].kota;
     }else
     cout << "data telah penuh" << endl;
-    
-        
+    x--;
+
+
     cout<<"Press Any Key...";
     getch();
 }
